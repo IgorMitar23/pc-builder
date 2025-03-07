@@ -1,0 +1,43 @@
+#pocetak, #prvi, #drugi, #treci, #cetvrti, #peti, #sesti, #sedmi {
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 30px;
+}
+.pocetakdugme, .procesordugme, .ramdugme, .maticnadugme, .grafickadugme, .kucistedugme, .napajanjedugme {
+    border: none;
+    font-size: 30px;
+    text-decoration: none;
+    color: #FEE715;
+    background-color: #101820;
+    border: none;
+    padding: 0.5rem;
+}
+.pocetakdugme a, .procesordugme a, .ramdugme a, .maticnadugme a, .grafickadugme a, .kucistedugme a, .napajanjedugme a {
+    font-size: 30px;
+    text-decoration: none;
+    color: #FEE715;
+    background-color: #101820;
+    border: none;
+    padding: 0.5rem;
+}
+.logokonfigurator {
+    width: 250px;
+    height: 250px;
+}
+select, input {
+    color: #FEE715;
+    background-color: #101820;
+    width: 50%;
+    font-size: 30px;
+    text-align: center;
+}
+#error-message {
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+}

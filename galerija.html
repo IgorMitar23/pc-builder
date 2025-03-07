@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galerija</title>
+    <link rel="stylesheet" href="pocetna.css" />
+    <link rel="stylesheet" href="galerija.css" />
+    <script src="pocetna.js"></script>
+    <script src="galerija.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logoinaziv">
+        <img
+          class="logo"
+          src="logo.png"
+          height="50"
+          width="50"
+          alt="Logo naše kompanije"
+        />
+        <h1 class="naslov">PC BUILDER</h1>
+      </div>
+      <nav class="meni">
+        <a class="prvilinkovi" href="index.html">Početna</a>
+        <a class="prvilinkovi" href="kakomitoradimo.html">Kako mi to radimo?</a>
+        <a class="prvilinkovi" href="konfigurator.html">Konfigurator</a>
+        <a class="prvilinkovi" href="galerija.html">Galerija</a>
+        <a class="prvilinkovi" href="onama.html">O nama</a>
+      </nav>
+    </header>
+    <main>
+      <p class="pricanje">
+        Ovde možete videti samo nekoliko konfiguracija zadovoljnih klijenata
+        koji su svoj novac uložili na pravo mesto:
+      </p>
+      <section class="gallery">
+        <img
+          src="galerija1.png"
+          alt="Image 1"
+          onclick="uvecanaSlika(this.src)"
+        />
+        <img
+          src="galerija2.png"
+          alt="Image 2"
+          onclick="uvecanaSlika(this.src)"
+        />
+        <img
+          src="galerija3.png"
+          alt="Image 3"
+          onclick="uvecanaSlika(this.src)"
+        />
+        <img
+          src="galerija4.png"
+          alt="Image 4"
+          onclick="uvecanaSlika(this.src)"
+        />
+        <img
+          src="galerija5.png"
+          alt="Image 5"
+          onclick="uvecanaSlika(this.src)"
+        />
+        <img
+          src="galerija6.png"
+          alt="Image 6"
+          onclick="uvecanaSlika(this.src)"
+        />
+        <img
+          src="galerija7.png"
+          alt="Image 7"
+          onclick="uvecanaSlika(this.src)"
+        />
+        <img
+          src="galerija8.png"
+          alt="Image 8"
+          onclick="uvecanaSlika(this.src)"
+        />
+        <img
+          src="galerija9.png"
+          alt="Image 9"
+          onclick="uvecanaSlika(this.src)"
+        />
+        <img
+          src="galerija10.png"
+          alt="Image 10"
+          onclick="uvecanaSlika(this.src)"
+        />
+        <img
+          src="galerija11.png"
+          alt="Image 11"
+          onclick="uvecanaSlika(this.src)"
+        />
+      </section>
+      <section id="FullImageView">
+        <img id="FullImage" />
+        <span id="CloseButton" onclick="smanjiSliku()">&times;</span>
+      </section>
+      <hr />
+      <a class="vrhstrane levo" href="#top">Vrati se na vrh strane</a>
+    </main>
+    <footer>
+      <nav class="socmreze">
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img class="drustvenemreze" src="facebook.png"
+        /></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img class="drustvenemreze" src="instagram.png"
+        /></a>
+        <a href="https://www.twitter.com/" target="_blank"
+          ><img class="drustvenemreze" src="twitter.png"
+        /></a>
+        <a href="https://www.youtube.com/" target="_blank"
+          ><img class="drustvenemreze" src="youtube.png"
+        /></a>
+      </nav>
+      <section class="pitanja">
+        <p class="pzapitanja">Ako imate pitanja, postavite ih ovde:</p>
+        <textarea rows="5" cols="50" id="sinan"></textarea>
+        <button class="potvrdi" onclick="toAsk()">Potvrdi</button>
+      </section>
+    </footer>
+  </body>
+</html>

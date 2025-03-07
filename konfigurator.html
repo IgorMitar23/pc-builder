@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfigurator</title>
+    <link rel="stylesheet" href="pocetna.css">
+    <link rel="stylesheet" href="konfigurator.css">
+    <script src="pocetna.js"></script>
+    <script src="konfigurator.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logoinaziv">
+            <img class="logo" src="logo.png" height="50" width="50" alt="Logo naše kompanije">
+            <h1 class="naslov">PC BUILDER</h1>
+        </div>
+        <nav class="meni">
+            <a class="prvilinkovi" href="index.html">Početna</a>
+            <a class="prvilinkovi" href="kakomitoradimo.html">Kako mi to radimo?</a>
+            <a class="prvilinkovi" href="konfigurator.html">Konfigurator</a>
+            <a class="prvilinkovi" href="galerija.html">Galerija</a>
+                       <a class="prvilinkovi" href="onama.html">O nama</a>
+        </nav>
+    </header>
+    <main>
+        <section id="pocetak">
+            <h1 class="naslovkonfigurator">Konfigurator</h1>
+            <p class="motokonfigurator">- Odaberite komponente -</p>
+            <p class="krenuti">Pritisnite dugme kako bi pokrenuli konfigurator</p>
+            <button class="pocetakdugme"><a href="#prvi">PRITISNI</a></button>
+        </section>
+        <section id="prvi">
+            <h1>Izaberi procesor</h1>
+            <img class="logokonfigurator" src="cpu.png"><label for="procesorlista">Procesor:</label>
+                <select id="procesorlista">
+                    <option></option>
+                    <optgroup label="Intel">
+                        <option id="intel1" value="15999">INTEL Core i3-13100F 3.4GHz</option>
+                        <option id="intel2" value="23999">INTEL Core i5-12400F 2.50 GHz</option>
+                        <option id="intel3" value="36999">INTEL Core i5-12600KF 2.8GHz</option>
+                        <option id="intel4" value="42999">INTEL Core i7-10700 2.90GHz</option>
+                        <option id="intel5" value="84999">INTEL Core i9-13900F 2GHz</option>
+                    </optgroup>
+                    <optgroup label="AMD">
+                        <option id="AMD1" value="12999">AMD Ryzen 5 3400G 3.7GHz</option>
+                        <option id="AMD2" value="29999">AMD Ryzen 7 5700X 3.4GHz</option>
+                        <option id="AMD3" value="34999">AMD Ryzen 7 5800X 3.8GHz</option>
+                        <option id="AMD4" value="49999">AMD Ryzen 7 7700X 4.5GHz</option>
+                        <option id="AMD5 id="intel"" value="84999">AMD Ryzen 9 7950X 4.7GHz</option>
+                    </optgroup>
+                </select>
+                <button class="procesordugme"><a href="#drugi">DALJE</a></button>
+        </section>
+        <section id="drugi">
+            <h1>Izaberi RAM memoriju</h1>
+            <img class="logokonfigurator" src="ram.png"><label for="ramlista">RAM memorija:</label>
+                <select id="ramlista">
+                    <option></option>
+                    <optgroup label="8GB">
+                        <option value="2999">KINGSTON Beast 8GB DDR4 3200MHz CL16</option>
+                        <option value="3999">KINGSTON Beast RGB 8GB DDR4 3200MHz CL16</option>
+                        <option value="4999">CORSAIR Vengeance RGB PRO 8GB DDR4 3600MHz C18</option>
+                        <option value="5999">KINGSTON Fury Beast 8GB DDR5 5600MHz CL40</option>
+                    </optgroup>
+                    <optgroup label="16GB">
+                        <option value="6999">KINGSTON Beast 16GB DDR4 2666MHz CL16</option>
+                        <option value="7999">APACER SODIMM 16GB DDR4 3200MHz CL22</option>
+                        <option value="8999">A-DATA XPG SPECTRIX D50 16GB DDR4 3200MHz CL16</option>
+                        <option value="9999">CORSAIR Vengeance RGB RS 16GB DDR4 3200MHz C16</option>
+                    </optgroup>
+                    <optgroup label="32GB">
+                        <option value="10999">SILICON POWER SODIMM DDR4 32GB 3200MHz</option>
+                        <option value="11999">KINGSTON Beast 32GB DDR4 3600MHz CL18</option>
+                        <option value="12999">KINGSTON FURY KF548S38IB</option>
+                        <option value="13999">KINGSTON Renegade RGB 32GB DDR4 3600MHz</option>
+                    </optgroup>
+                </select>
+                <button class="procesordugme"><a href="#treci">DALJE</a></button>
+        </section>
+        <section id="treci">
+            <h1>Izaberi matičnu ploču</h1>
+            <img class="logokonfigurator" src="motherboard.png"><label for="plocalista">Matična ploča:</label>
+                <select id="plocalista">
+                    <option></option>
+                    <optgroup label="Intel">
+                        <option id="intel6" value="8999">ASROCK H510M-HDV R2.0</option>
+                        <option id="intel7" value="11999">GIGABYTE H610M S2H</option>
+                        <option id="intel8" value="15999">ASUS Prime B760M-K D4</option>
+                        <option id="intel9" value="42999">ASUS TUF GAMING H770-PRO WIFI</option>
+                        <option id="intel10" value="79999">ASUS ProArt Z790-CREATOR WIFI</option>
+                    </optgroup>
+                    <optgroup label="AMD">
+                        <option id="AMD6" value="9999">Asus PRIME B450M</option>
+                        <option id="AMD7" value="16999">ASROCK B650M-HDV/M.2</option>
+                        <option id="AMD8" value="33999">ASROCK B650E PG Riptide WiFi</option>
+                        <option id="AMD9" value="64999">GIGABYTE B650E AORUS MASTER (rev. 1.0) </option>
+                        <option id="AMD10" value="68999">GIGABYTE X670E AORUS MASTER </option>
+                    </optgroup>
+                </select>
+                <button class="procesordugme"><a href="#cetvrti">DALJE</a></button>
+        </section>
+        <section id="cetvrti">
+            <h1>Izaberi grafičku kartu</h1>
+            <img class="logokonfigurator" src="graphic-card.png"><label for="grafickakartalista">Grafička karta:</label>
+                <select id="grafickakartalista">
+                    <option></option>
+                    <optgroup label="NVIDIA">
+                        <option value="15999">ASUS nVidia GeForce GT 1030</option>
+                        <option value="25999">ASUS Phoenix GeForce GTX 1630</option>
+                        <option value="55999">ASUS Dual GeForce RTX 3060 OC</option>
+                        <option value="60999">GIGABYTE nVidia GeForce RTX 3060 Ti</option>
+                        <option value="150999">ASUS ROG Strix nVidia GeForce RTX 4070Ti</option>
+                        <option value="279999">MSI GeForce RTX 4090</option>
+                    </optgroup>
+                    <optgroup label="AMD">
+                        <option value="20999">ASUS Phoenix AMD Radeon RX 6400</option>
+                        <option value="35999">XFX Speedster SWFT 210 AMD Radeon RX 6600</option>
+                        <option value="70999">ASUS Dual Radeon RX 6700 XT 12GB</option>
+                        <option value="135999">SAPPHIRE AMD Radeon RX 7900 XT 20GB</option>
+                        <option value="140999">SAPPHIRE PULSE RX 7900 XTX</option>
+                        <option value="179999">POWERCOLOR Red Devil RX 7900 XTX 24GB</option>
+                    </optgroup>
+                </select>
+                <button class="procesordugme"><a href="#peti">DALJE</a></button>
+        </section>
+        <section id="peti">
+            <h1>Izaberi kućište</h1>
+            <img class="logokonfigurator" src="tower.png"><label for="kucistelista">Kućište:</label>
+                <select id="kucistelista">
+                    <option></option>
+                    <option value="3999">INTER-TECH kućište C-3 SAPHIR</option>
+                    <option value="6999">DEEP COOL CH370</option>
+                    <option value="9999">AEROCOOL Skyline ARGB</option>
+                    <option value="12999">DEEPCOOL Kućište MATREXX 50 ADD-RGB 4F</option>
+                    <option value="15999">THERMALTAKE Kućište H330 CA 1R8</option>
+                    <option value="18999">ANTEC Kućište P120 Crystal</option>
+                    <option value="21999">COOLER MASTER Kućište MASTERCASE H500P</option>
+                    <option value="24999">NZXT H7 Elite - CM-H71EW-01</option>
+                    <option value="27999">DEEP COOL QUADSTELLAR INFINITY</option>
+                    <option value="30999">COOLERMASTER HAF 700</option>
+                </select>
+                <button class="procesordugme"><a href="#sesti">DALJE</a></button>
+        </section>
+        <section id="sesti">
+            <h1>Izaberi napajanje</h1>
+            <img class="logokonfigurator" src="supply.png"><label for="napajanjelista">Napajanje:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                <select id="napajanjelista">
+                    <option></option>
+                    <option value="2999">DEEP COOL PF350 350W</option>
+                    <option value="4999">GAMDIAS Kratos M1-600B 600W</option>
+                    <option value="5999">DEEP COOL napajanje DN550</option>
+                    <option value="7999">AQIRYS Pulsar LS 750W</option>
+                    <option value="8999">CORSAIR CV650 650W</option>
+                    <option value="11999">LC-POWER Super Silent Modular Series 650W</option>
+                    <option value="14999">SEASONIC PRIME GX-650 650W</option>
+                    <option value="15999">CORSAIR RM1000e 1000W</option>
+                    <option value="17999">BE QUIET! Dark Power 13 750W BN333</option>
+                </select>
+                <button class="procesordugme"><a href="#sedmi">DALJE</a></button>
+        </section>
+        <section id="sedmi">
+            <button id="dugmekonfigurator" class="procesordugme" onclick="ukupnaSuma()">POTVRDI</button><br>
+                Cena ove konfiguracije je: <input type="text" id="rezultatkonfigurator" readonly>
+                <div id="error-message"></div>
+                <p id="cilj"></p>
+        </section>
+        <hr>
+            <a class="vrhstrane levo" href="#top">Vrati se na vrh strane</a>
+    </main>
+    <footer>
+        <nav class="socmreze">
+            <a href="https://www.facebook.com/" target="_blank"><img class="drustvenemreze" src="facebook.png"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img class="drustvenemreze" src="instagram.png"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img class="drustvenemreze" src="twitter.png"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img class="drustvenemreze" src="youtube.png"></a>
+        </nav>
+        <section class="pitanja">
+            <p class="pzapitanja">Ako imate pitanja, postavite ih ovde:</p>
+            <textarea rows="5" cols="50" id="sinan"></textarea>
+            <button class="potvrdi" onclick="toAsk()">Potvrdi</button>
+        </section>
+    </footer>
+</body>
+</html>

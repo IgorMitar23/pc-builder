@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FEE715;
+}
+.logoinaziv {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 20px;
+}
+header {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #101820;
+    color: #FEE715;
+    height: 70px;
+    position: sticky;
+    top: 0;
+}
+.logo, nav {
+    margin: 1rem;
+}
+nav {
+    display: flex;
+    gap: 2rem;
+    margin: 5rem;
+    font-size: 25px;
+}
+.prvilinkovi {
+    color: #FEE715;
+    text-decoration: none;
+    transition: ease 0.3s all;
+}
+.prvilinkovi:hover {
+    transform: translateY(-5px);
+}
+.dobrodoslica {
+    text-align: center;
+    margin: 3rem;
+    color: #101820;
+    font-size: 25px;
+}
+.prvasekcija, .prviartikal, .drugi, .drugiartikal , .treci, .treciartikal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    color: #101820;
+    margin: 0.5rem;
+}
+.prvipp, .drugip, .trecip {
+    margin: auto 80px;
+    font-size: 20px;
+    color: #101820;
+}
+.prvih3, .drugih3, .trecih3 {
+    font-size: 20px;
+}
+hr {
+    background-color: #101820;
+    height: 0.1rem;
+    border: none;
+    width: 95%;
+    margin: auto;
+}
+.vrhstrane {
+    display: block;
+    margin: 0.5rem;
+    text-decoration: none;
+    color: #101820;
+}
+.vrhstrane:hover {
+    text-decoration: underline;
+}
+footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.drustvenemreze {
+    margin: 10px;
+    height: 45px;
+    width: 45px;
+    transition: all 0.5s;
+}
+.pitanja {
+    position: relative;
+    bottom: 50px;
+}
+.drustvenemreze:hover {
+    transform: translateY(-5px);
+    height: 50px;
+    width: 50px;
+}
+.potvrdi {
+    background-color: #101820;
+    color:#FEE715;
+    border: none;
+    height: 20px;
+    width: 80px;
+    border-radius: 9px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+.potvrdi:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.potvrdi:active {
+    background-color: #101820;
+}
+textarea {
+    resize: none;
+}
+.pzapitanja {
+    font-size: 15px;
+}
